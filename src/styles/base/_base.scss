@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: variables.$bg-main;
+  color: variables.$text-primary;
+}

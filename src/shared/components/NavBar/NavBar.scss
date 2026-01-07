@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  background: #3b1aa5;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  gap: 18px;
+}
+
+.navbar__left {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__search {
+  flex: 0 0 420px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar__locale {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
