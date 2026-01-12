@@ -1,6 +1,6 @@
 import "./SearchBar.scss";
 
-export default function SearchBar({ value, onChange }) {
+export default function SearchBar({ search, onSearchChange }) {
   return (
     <div className="search-bar">
       <img
@@ -13,16 +13,16 @@ export default function SearchBar({ value, onChange }) {
       <input
         type="text"
         className="search-bar__input"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
+        value={search}
+        onChange={(e) => onSearchChange(e.target.value)}
         placeholder="Search for games..."
       />
 
-      {value?.trim() && (
+      {search?.trim() && (
         <button
           type="button"
           className="search-bar__clear"
-          onClick={() => onChange("")}
+          onClick={() => onSearchChange("")}
           aria-label="Clear search"
         >
           ✕

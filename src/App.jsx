@@ -1,12 +1,11 @@
-import SearchGames from './features/searchGames/SearchGames'
+import SearchGames from "./features/searchGames/components/SearchGames";
 
 function App() {
-
   return (
     <>
       <SearchGames />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

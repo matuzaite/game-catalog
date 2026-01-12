@@ -1,0 +1,123 @@
+.game-card {
+  background: #2b176b;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 220px;
+}
+
+.game-card__image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.game-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-card__badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+
+  background: #00e5a8;
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.game-card__content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-card__title {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.game-card__meta {
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.game-card__platform {
+  color: #9ff0d4;
+}
+
+.game-card__region {
+  color: #00e5a8;
+  font-weight: 600;
+}
+
+.game-card__pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.game-card__prices {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.old-price {
+  font-size: 11px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 11px;
+  color: #00e5a8;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.game-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.cashback {
+  color: #00e5a8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wishlist {
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.stock {
+  color: #cfcfcf;
+}

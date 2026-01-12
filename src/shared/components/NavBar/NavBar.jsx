@@ -2,11 +2,8 @@ import SearchBar from "../SearchBar";
 import Logo from "../Logo";
 import IconButton from "../IconButton";
 import "./NavBar.scss";
-import { useState } from "react";
 
-const NavBar = () => {
-  const [search, setSearch] = useState("");
-
+const NavBar = ({ search, onSearchChange }) => {
   return (
     <header className="navbar">
       <div className="container navbar__inner">
@@ -15,7 +12,7 @@ const NavBar = () => {
         </div>
 
         <div className="navbar__search">
-          <SearchBar value={search} onChange={setSearch} />
+          <SearchBar search={search} onSearchChange={onSearchChange} />
           <IconButton
             pic="./lithuania-flag-icon.svg"
             alt="lithuania-icon"
