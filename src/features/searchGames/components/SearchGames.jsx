@@ -5,19 +5,22 @@ import { useGames } from "../hooks/useGames";
 
 export default function SearchGames() {
   const [search, setSearch] = useState("");
-  const { games, loading, error } = useGames();
+  const { games, loading, error } = useGames(search);
 
   const filteredGames = games.filter((game) =>
     game.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  if (loading) return <div>Loading games...</div>;
-  if (error) return <div>Error: {error}</div>;
-
   return (
     <>
       <NavBar search={search} onSearchChange={setSearch} />
-      <CardList games={filteredGames} />
+      {error ? (
+        <div>Error: {error}</div>
+      ) : loading ? (
+        <div>Loading games...</div>
+      ) : (
+        <CardList games={filteredGames} />
+      )}
     </>
   );
 }
